@@ -2214,13 +2214,13 @@ module.exports={
   "OP_CHECKMULTISIGVERIFY": 175,
 
   "OP_NOP1": 176,
-  
+
   "OP_NOP2": 177,
   "OP_CHECKLOCKTIMEVERIFY": 177,
 
   "OP_NOP3": 178,
   "OP_CHECKSEQUENCEVERIFY": 178,
-  
+
   "OP_NOP4": 179,
   "OP_NOP5": 180,
   "OP_NOP6": 181,
@@ -3332,6 +3332,16 @@ module.exports = {
     },
     pubKeyHash: 0x1e,
     scriptHash: 0x16,
+    wif: 0x9e
+  },
+  pandacoin: {
+    messagePrefix: '\x19Pandacoin Signed Message:\n',
+    bip32: {
+      public: 0x0488ade4,
+      private: 0x0488b21e
+    },
+    pubKeyHash: 0x37,
+    scriptHash: 0xB7,
     wif: 0x9e
   }
 }
@@ -5900,7 +5910,7 @@ module.exports = {
     var length = message.length;
     if (notString) {
       if (typeof length !== 'number' ||
-        !Array.isArray(message) && 
+        !Array.isArray(message) &&
         !(ARRAY_BUFFER && ArrayBuffer.isView(message))) {
         throw 'input is invalid type';
       }
@@ -5986,7 +5996,7 @@ module.exports = {
     var length = str.length;
     if (notString) {
       if (typeof length !== 'number' ||
-        !Array.isArray(str) && 
+        !Array.isArray(str) &&
         !(ARRAY_BUFFER && ArrayBuffer.isView(str))) {
         throw 'input is invalid type';
       }
