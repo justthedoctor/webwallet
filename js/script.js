@@ -86,7 +86,7 @@ var PARAMS = {
 	'PND': {
 					coingecko: 'pandacoin',
 					coinjs: cc.pandacoin,
-					network: cc.pandacoin.networks.dogecoin,
+					network: cc.bitcoin.networks.pandacoin,
 					qrColor: '000000',
 					minFee: 1,
 					maxFee: 100,
