@@ -82,7 +82,28 @@ var PARAMS = {
                 unspentOutput: 'tx_output_n',
                 unspentValue: 'value',
 		unspentDivision: 100000000
-        }
+	},
+	'PND': {
+					coingecko: 'pandacoin',
+					coinjs: cc.pandacoin,
+					network: cc.pandacoin.networks.dogecoin,
+					qrColor: '000000',
+					minFee: 1,
+					maxFee: 100,
+					txFee: 1,
+					explorer: 'https://live.blockcypher.com/doge/',
+					donation: 'DFkhwwjyeLBWPfhchwQLV7JVrnVg45zgh6',
+					unspentApi: 'https://chainz.cryptoid.info/pnd/api.dws?q=unspent&key=1a9c92c7492b&active=',
+					sendApi: 'http://cryptodepot.org/coinbin/js/RPCSendRawTrans.php',
+					sendTxHex: 'data',
+					sendTxid1: 'data',
+					sendTxid2: 'transaction_hash',
+					unspentArray1: 'txrefs',
+					unspentTxid: 'tx_hash',
+					unspentOutput: 'tx_output_n',
+					unspentValue: 'value',
+unspentDivision: 100000000
+	}
 };
 
 window.Clipboard = (function(window, document, navigator) {
